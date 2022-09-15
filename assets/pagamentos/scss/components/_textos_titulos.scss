@@ -1,0 +1,134 @@
+body, html {
+
+    .titulo-banner {
+        font-size: 48px;
+        line-height: 50px;
+        font-weight: 500;
+        margin-bottom: 39px;
+        margin: 0;
+        font-family: 'Urbanist', sans-serif;
+    }
+    .titulo-grande {
+        font-size: 48px;
+        line-height: 50px;
+        font-weight: 500;
+        margin: 0;
+        font-family: 'Urbanist', sans-serif;
+    }
+    .titulo-medio {
+        font-size: 32px;
+        line-height: 42px;
+        font-weight: 400;
+        margin: 0;
+        font-family: 'Urbanist', sans-serif;
+    }
+    .titulo-accordeon {
+        text-transform: uppercase;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        margin: 0;
+        width: inherit;
+        font-family: 'Inter', sans-serif;
+    }
+    .titulo-card-produtos-carrosel {
+        font-size: 32px;
+        line-height: 42px;
+        font-weight: 600;
+        margin: 0;
+        font-family: 'Urbanist', sans-serif;
+    }
+    .titulo-cards-impacto {
+        font-size: 24px;
+        line-height: 24px;
+        font-weight: 700;
+        margin: 0;
+        font-family: 'Urbanist', sans-serif;
+        display: flex;
+    }
+    .texto-padrao {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        margin: 0;
+        font-family: 'Inter', sans-serif;
+    }
+    .texto-mini {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        margin: 0;
+        font-family: 'Inter', sans-serif;
+    }
+    .titulo-card-produtos {
+        text-transform: uppercase;
+        font-size: 18px;
+        line-height: 23px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        margin: 0;
+        font-family: 'Inter', sans-serif;
+    }
+    .titulo-card-doc {
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 700;
+        margin: 0;
+        font-family: 'Inter', sans-serif;
+    }
+    .texto-card-doc {
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 400;
+        margin: 0;
+        font-family: 'Inter', sans-serif;
+    }
+    @media only screen and (min-width: 1200px) {
+          .texto-mini {
+            max-width: 348px;
+        }
+        .titulo-banner {
+            font-size: 64px;
+            line-height: 68px;
+            font-weight: 500;
+            margin-bottom: 50px;
+        }
+        .titulo-grande {
+            line-height: 60px;
+            font-weight: 700;
+        }
+        .titulo-medio {
+            font-size: 48px;
+            line-height: 60px;
+        }
+        .titulo-accordeon {
+            font-size: 24px;
+            line-height: 26px;
+        }
+        .titulo-cards-impacto {
+            font-size: 32px;
+            line-height: 32px;
+        }
+        .texto-padrao {
+            font-size: 20px;
+            line-height: 30px;
+            font-weight: 400;
+        }
+        .titulo-card-produtos-carrosel {
+            font-size: 36px;
+            line-height: 47px;
+        }
+        .titulo-card-produtos {
+            font-size: 24px;
+            font-weight: 700;
+        }
+        .titulo-card-doc {
+            font-size: 20px;
+        }
+        .texto-card-doc {
+            font-size: 20px;
+        }
+    
+    }
+}

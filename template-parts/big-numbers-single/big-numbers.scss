@@ -1,0 +1,142 @@
+.bignumbers {
+  background-color: transparent;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 588px;
+  width: 100vw;
+  overflow: hidden;
+
+  @media (max-width: 768px) {
+    height: 544px;
+    margin-left: -22px;
+  }
+
+  .content {
+    .title {
+      font-family: 'Urbanist';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 60px;
+      color: #FFFFFF;
+      margin-bottom: 65px;
+      position: relative;
+      display: table;
+      margin-top: 80px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -15px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 6px;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0.97%, #49FADE 41.2%, rgba(73, 250, 222, 0) 100%);
+        border-radius: 100px;
+      }
+
+      @media (max-width: 991px) {
+        font-size: 30px;
+        line-height: 42px;
+        margin-bottom: 30px;
+        padding: 0 22px;
+
+        &::after {
+          bottom: -5px;
+        }
+      }
+    }
+
+    .bignumbers__slider {
+      margin: 0 -15px;
+      top: 15px;
+
+      .slider__slide {
+        padding: 28px;
+        border-radius: 20px 20px 0px 0px;
+        background: transparent;
+        border: 1px solid #fff;
+        margin: 0 15px;
+        height: 380px;
+        width: 100%;
+        position: relative;
+        top: 50px;
+        transition: all 150ms ease-in-out;
+
+        .slide__head {
+          display: flex;
+          align-items: center;
+          margin-bottom: 30px;
+          
+          .date {
+            width: 100%;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #FFFFFF;
+            text-align: right;
+            margin-bottom: 0;
+          }
+        }
+
+        .slide__body {
+          cursor: -webkit-grab;
+          cursor: -moz-grab;
+          cursor: -o-grab;
+          cursor: -ms-grab;
+          cursor: grab;
+
+          .bignumber {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 45px;
+            line-height: 40px;
+            color: #FFFFFF;
+            margin-bottom: 20px;
+            transition: color 150ms ease-in-out;
+          }
+          .text {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #FFFFFF;
+            margin-bottom: 0;
+          }
+        }
+
+        &:hover {
+          background: #27176C;
+          border: 1px solid #27176C;
+          top: 0;
+
+          .slide__body {
+            .bignumber {
+              color: #00DFD7;
+            }
+          }
+        }
+
+        &.slick-current {
+          @media (max-width: 768px) {
+            background: #27176C;
+            border: 1px solid #27176C;
+            top: 0;
+
+            .slide__body {
+              .bignumber {
+                color: #00DFD7;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

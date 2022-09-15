@@ -1,0 +1,105 @@
+.API__mae
+    padding: $padding-recuado
+    //padding-top: 3.438rem
+    width: 100%
+    height: auto
+    text-align: center
+    .API__titulo
+        padding:  3.438rem 0
+        width: fit-content
+        margin: 0 auto
+        display: flex
+        flex-direction: column
+        .texto__destaque
+            display: flex
+            flex-direction: column
+            align-items: center
+            .destaque__API
+                width: auto
+                height: 4px
+                width: 21.313rem
+        p
+            font-family: $Urbanist
+            color: $cor-texto
+            font-size: 3rem
+            line-height: 4rem
+            font-weight: 400
+            display: flex
+            justify-content: center
+            margin-bottom: 0 
+            strong
+                display: flex
+                flex-direction: column
+                width: max-content
+    .API__titulo::after 
+            content: ""
+            background: linear-gradient(90deg, rgba(73, 250, 222, 0) 0%, rgb(0, 186, 255) 50%, rgba(73, 250, 222, 0) 100%)
+            height: 4px
+            width: auto
+    .API__conteudo
+        width: 100%
+        color: $cor-texto
+        background: white
+        border-radius: 30px
+        .API__card
+            display: flex
+            flex-wrap: wrap
+            padding: 4.688rem 4.375rem 2.5rem 3.375rem
+            text-align: left
+            .API__card__esquerda
+                width: 50%
+                padding-right: 2rem
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+                h3
+                    font-family: $Urbanist
+                    color: $cor-texto
+                    font-size: 2.25rem
+                    line-height: 3rem
+                    font-weight: bold
+                    margim: 2rem
+                p
+                    font-family: $Inter
+                    font-weight: 400
+                    font-size: 1.25rem
+                    line-height: 1.875rem
+                button
+                    padding-top: 2.625rem
+                    color: $cor-texto
+                    border-radius: 50px
+                    padding: .5rem 2rem
+                    border: 1px solid $cor-texto
+                .conteudo
+                    width: 100%
+                .botoes
+                    padding-top: 2.5rem
+                    width: 100%
+                    button
+                        height: 4.511rem
+                        width: auto
+                        border-radius: 2.2555rem
+                        padding: .5rem 2rem
+                        border: none
+                        margin: .5rem
+            .API__card__direita
+                width: 50%
+                padding-left: 1rem
+                .conteudo
+                    img
+                        width: 100%
+                        height: auto
+                .controles
+                    padding-top: 4.5rem
+                    display: flex
+                    justify-content: flex-end
+                    .ativo
+                        height: 1rem
+                        width: 2rem
+                        background-color: $cor-texto
+                        border-radius: 100px
+                    .inativo
+                        height: 1rem
+                        width: 1rem
+                        border: 1px solid $cor-texto
+                        border-radius: 100px

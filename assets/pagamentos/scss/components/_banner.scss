@@ -1,0 +1,103 @@
+#banner {
+    position: relative;
+
+    @media (max-width: 992px) {
+      margin-top: 60px;
+    }
+    
+    .bg-banner {
+        width: 100%;
+    }
+
+    .button {
+      @media (max-width: 991px) {
+        display: block;
+        width: 100% !important;
+        text-align: center;
+      }
+    }
+    
+    .banner-desk {
+        display: none;
+    }
+    .box-conteudo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        padding: 32% 15% 0 7%;
+        padding: 100px 20px;
+    }
+    .box-textos {
+      color: #1E1360;
+      @media (max-width: 991px) {
+        margin-right: 0 !important;
+        padding-right: 0 !important;
+        margin-left: 0 !important;
+      }
+      
+      .titulo-banner {
+        color: inherit;
+        margin-bottom: 46px;
+      }
+      
+      .texto-padrao {
+        color: inherit;
+        @media (max-width: 1399px) {
+          max-width: 500px;
+        }
+      }
+
+      &.text--white {
+        color: #fff;
+      }
+    }
+    .box-cta {
+        margin-top: 26px;
+        display: flex;
+        flex-direction: column;
+        a {
+          width: max-content;
+          margin-bottom: 25px;
+        }
+    }
+    @media only screen and (min-width: 1200px) {
+        .banner-desk {
+            display: block;
+        }
+        .banner-mobile{
+            display: none;
+        }
+        .box-conteudo {
+            height: 100%;
+            display: flex;
+            padding: 0;
+
+            .box-esquerda, .box-direita {
+                width: 50%;
+                height: 100%;
+            }
+
+            .box-textos {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 650px;
+                padding-left: 80px;
+                .box-cont-intern {
+                  max-width: 650px;
+                }
+            }
+        }
+        .box-cta {
+            margin-top: 46px;
+            display: flex;
+            flex-direction: row;
+            a {
+                margin-right: 16px;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

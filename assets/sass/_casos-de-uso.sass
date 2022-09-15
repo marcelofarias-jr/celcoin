@@ -1,0 +1,297 @@
+// *************************CASOS DE USO****************************
+.banner__casos
+    margin-top: 6.5rem
+    width: 100%
+    height: auto
+    padding: 120px 0 86px 0
+    background: linear-gradient(278.31deg, #C1BED8 -17.62%, #CFD0E8 37.21%, #ECEDF7 100.58%)
+    background-image: url('../img/banner-bg.png')
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    .forminator-custom-form
+        display: flex !important
+        &.forminator-submitted
+          .forminator-label--forminator-success
+            p
+              background: #806DFB
+              padding: 15px
+              border-radius: 8px
+              font-family: 'Inter'
+              color: #fff
+          .forminator-row
+            display: none !important
+    .banner__texto
+        text-align: left
+        margin-bottom: 50px
+        span
+            font-family: 'Inter'
+            font-style: normal
+            font-weight: 500
+            font-size: 1.5rem
+            line-height: 1.875rem
+            color: $cor-primária
+        h1
+            font-family: 'Urbanist'
+            font-style: normal
+            font-weight: bold
+            font-size: 4rem
+            line-height: 105%
+            color: $cor-texto
+            //padding-right: 73.7rem
+            margin-bottom: 24px
+            //margin-top: 16px
+            max-width: 585px
+        p
+            font-family: 'Inter'
+            font-style: normal
+            font-weight: 400
+            font-size: 1.25rem
+            line-height: 1.875rem
+            //padding-right: 47rem
+            color: $cor-texto
+            max-width: 644px
+
+    .banner__form--alt
+      display: flex
+      button
+        min-width: 209.66px
+      @media (max-width: 560px)
+        display: block
+        button
+          margin-top: 15px
+          width: 100%
+    .banner__button
+        padding: 12px 32px
+        background-color: #27176C
+        color: white
+        font-weight: 700
+        font-family: "Inter"
+        font-size: 20px
+        border-radius: 50px
+        border: 1px solid #27176C
+        i.arrow
+            border-color: #FFF
+    .banner__input
+      input
+        padding: 16px 256px 16px 16px
+        color: #000
+        font-family: "Inter"
+        font-weight: 500
+        font-size: 14px
+        line-height: 21.78px
+        border: 1px solid #CEDDE6
+        border-radius: 10px
+        margin-right: 24px
+        outline: none
+        &::placeholder
+            color: #C3C1CA
+            font-family: "Inter"
+            font-weight: 500
+            font-size: 14px
+            line-height: 21.78px
+.casos__categorias
+    padding: 77px 0 129px 0
+    background-color: #F7F5FF
+    .casos__categorias__titulo
+        h2
+            font-family: 'Urbanist'
+            font-style: normal
+            font-weight: 400
+            font-size: 3rem
+            line-height: 3.75rem
+            color: $cor-texto
+            position: relative
+            padding-bottom: 20px
+            width: 510px
+            &:after
+                content: ""
+                position: absolute
+                left: -3px
+                right: -3px
+                height: 6px
+                background: linear-gradient(90deg, rgba(128, 109, 250, 0) 0.97%, #806DFA 48.74%, rgba(128, 109, 250, 0) 100%)
+    .casos__categorias__conteudo
+        height: 350px
+        display: inline-flex
+        flex-wrap: nowrap
+        align-items: center
+        touch-action: pan-y
+        user-select: none
+        cursor: grab
+        padding-right: 200px
+        .card__categorias
+            display: flex
+            justify-content: center
+            align-items: center
+            min-width: 377px
+            min-height: 295px
+            background: #FDFDFD
+            box-shadow: 0px 57px 91px -37px rgba(26, 14, 75, 0.3)
+            border-radius: 20px
+            opacity: 1
+            transition: opacity 2s
+
+            text-align: center
+            margin-right: 40px
+            h3
+                font-family: 'Urbanist'
+                font-style: normal
+                font-weight: 700
+                font-size: 28px
+                line-height: 40px
+                color: #1E1360
+            a
+                text-decoration: none
+                &:visited
+                    text-decoration: none
+                    color: #1E1360
+            img
+                width: 100px
+                height: 100px
+        & .show
+            opacity: 1
+.casos__bar
+    display: block
+    height: 1px
+    border: 0
+    border-top: 1px solid red
+    margin: 1em 0
+    padding: 0
+.blog
+    width: 100%
+    height: auto
+    padding: 80px 0 0 0
+    text-align: center
+    background: #F4F4F4
+    .blog__conteudo
+        width: 100%
+        height: auto
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        .card__blog
+            max-width: 268px
+            margin-bottom: 0.5rem
+            border: 1px solid purple
+            color: white
+            border-radius: 20px 20px 0px 0px
+            max-height: 17.9rem
+            &:nth-child(1)
+                background: linear-gradient(358.84deg, #27176C -1.08%, rgba(39, 23, 108, 0) 99.01%), url('../img/open_banking.png')
+                background-repeat: no-repeat
+            &:nth-child(2)
+                background: linear-gradient(358.84deg, #27176C -1.08%, rgba(39, 23, 108, 0) 99.01%), url('../img/pagamento_contas.png')
+                background-repeat: no-repeat
+            &:nth-child(3)
+                background: linear-gradient(358.84deg, #27176C -1.08%, rgba(39, 23, 108, 0) 99.01%), url('../img/recargas.png')
+                background-repeat: no-repeat
+            &:nth-child(4)
+                background: linear-gradient(358.84deg, #27176C -1.08%, rgba(39, 23, 108, 0) 99.01%), url('../img/transferencia.png')
+                background-repeat: no-repeat
+            .card__blog_resume
+                display: block
+                text-align: left
+                padding: 0px 16px
+                text-decoration: none
+                color: white
+                &:hover
+                    color: white
+                &:visited
+                    color: white
+                span
+                    font-family: "Urbanist"
+                    font-weight: 700
+                    font-size: 23px
+                    line-height: 32px
+                    width: 100%
+                hr
+                    margin: 8px auto 10px auto
+                    opacity: 1
+                p
+                    text-align: justify
+                    -webkit-box-orient: vertical
+                    -webkit-line-clamp: 4
+                    display: -webkit-box
+                    overflow: hidden
+            .card__blog_person
+                background-color: white
+                display: flex
+                padding: 19px 18px 0px 18px
+                box-shadow: 0px 4px 12px rgba(48, 45, 63, 0.13)
+                border-radius: 0px 0px 20px 20px
+                margin-top: -12px
+                width: 100.6%
+                margin-left: -1px
+                img
+                    width: 46px
+                    height: 46px
+                    margin-right: 12px
+                .card__blog_texto
+                    font-family: "Inter"
+                    text-align: left
+                    span
+                        font-weight: 700
+                        font-size: 16px
+                        color: #302D3F
+                    p
+                        font-weight: 400
+                        font-size: 14px
+                        color: #C3C1CA
+            .card__blog_button
+                text-align: right
+                margin: 13px 12px auto auto
+                margin-bottom: 71px
+                button
+                    background-color: white
+                    box-shadow: 0px 20px 24px -8px rgba(142, 142, 142, 0.25)
+                    border-radius: 106px
+                    border: 1px solid white
+                    max-width: 37px
+                    max-height: 35px
+                    padding: 4px 6px 6px 6px
+.banner__container_vermais
+    width: 100vw
+    display: flex
+    justify-content: center
+    background: #f4f4f4
+    padding: 80px 0
+
+#banner__vermais
+    font-weight: 700
+    font-family: "Inter"
+    padding: 20px 32px
+    background: #806DFB
+    font-size: 20px
+    line-height: 20px
+    border: 1px solid #806DFB
+    border-radius: 50px
+    color: white
+    margin-bottom: 80px
+    margin-top: 60px
+
+.arrow
+    border: solid white
+    border-width: 0 2px 2px 0
+    display: inline-block
+    padding: 3.3px
+    margin-bottom: 1px
+    margin-left: 12px
+.right
+    transform: rotate(-45deg)
+    -webkit-transform: rotate(-45deg)
+
+@media only screen and (max-width: 992px)
+    .banner__button
+        margin-top: 50px
+@media only screen and (max-width: 768px)
+    .banner__casos .banner__input
+        width: 100%
+        padding: 16px 15px
+    .banner__button
+        margin-top: 50px
+        width: 100%
+    .blog
+        padding-top: 0
+        .blog__conteudo
+            justify-content: center

@@ -1,0 +1,325 @@
+footer
+    background-color: #F7F5FF
+    .logo
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding-bottom: 47px
+        padding-top: 42px
+    .logos
+        img
+            margin-left: 24px
+    .conteudo
+        margin-top: 60px
+        padding-bottom: 60px
+        .container_solucoes
+            background: white
+            padding: 32px 42px
+            border-radius: 20px
+            a
+                text-decoration: none
+            h3
+                font-family: 'Urbanist'
+                font-style: normal
+                font-weight: 700
+                font-size: 20px
+                line-height: 24px
+                color: #1E1360
+                text-transform: uppercase
+                border-bottom: 1px solid #E6E5EA
+                padding-bottom: 24px
+            .accordion-item
+                border: none
+                background-color: white
+                margin-top: 24px
+                #headingFour
+                    button
+                        white-space: normal !important
+                        margin-right: 40px
+                #headingNine
+                    margin-top: -20px
+
+                .accordion-header
+                    width: auto
+                    border: none
+                    box-shadow: none
+                    display: flex
+                    .accordion-button
+                        background-color: white
+                        color: $cor-texto
+                        padding-left: 0
+                        font-family: 'Inter'
+                        font-style: normal
+                        font-weight: 500
+                        font-size: 18px
+                        line-height: 24px
+                        color: #1E1360
+                        white-space: nowrap
+                        transition: all .7s ease-in-out
+                        .arrow
+                            border-color: #1E1360 !important
+                            transition: all .7s ease-in-out
+
+                        .down
+                            transform: rotate(45deg)
+                            -webkit-transform: rotate(45deg)
+                            transition: all .7s ease-in-out
+                    .accordion-button:not(.collapsed)
+                        color: #806DFB
+                        transition: all .7s ease-in-out
+                        .arrow
+                            border-color: #806DFB !important
+                            transition: all .7s ease-in-out
+                        .down
+                            transform: rotate(-135deg)
+                            -webkit-transform: rotate(-135deg)
+                            transition: all .7s ease-in-out
+                .accordion-body
+                    .accordion-link
+                        margin-top: 16px
+                        a
+                            font-family: 'Inter'
+                            font-style: normal
+                            font-weight: 500
+                            font-size: 16px
+                            line-height: 24px
+                            letter-spacing: -0.011em
+                            color: #1E1360 !important
+                            text-decoration: none
+
+        .container_seccoes
+            padding-top: 32px
+            .container_seccao
+                display: flex
+                flex-direction: column
+                max-width: 149px
+                h4
+                    font-family: 'Urbanist'
+                    font-style: normal
+                    font-weight: 700
+                    font-size: 20px
+                    line-height: 24px
+                    text-transform: uppercase
+                    color: #1E1360
+                    padding-bottom: 16px
+                    margin-bottom: 16px
+                    border-bottom: 2px solid #E6E5EA
+                a
+                    font-family: 'Inter'
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 16px
+                    line-height: 24px
+                    letter-spacing: -0.011em
+                    color: #1E1360
+                    text-decoration: none
+                    margin-bottom: 16px
+
+        .second
+            margin-left: 37px
+            #headingCompartilhamento
+                button
+                    font-family: 'Urbanist'
+                    font-style: normal
+                    font-weight: 700
+                    font-size: 20px
+                    line-height: 24px
+                    text-transform: uppercase
+                    color: #1E1360
+                    white-space: nowrap
+                    .arrow
+                        border-color: #1E1360 !important
+                        transition: all .7s ease-in-out
+                    .down
+                        transform: rotate(45deg)
+                        -webkit-transform: rotate(45deg)
+                        transition: all .7s ease-in-out
+                .accordion-button:not(.collapsed)
+                    .down
+                        transform: rotate(-135deg)
+                        -webkit-transform: rotate(-135deg)
+                        transition: all .7s ease-in-out
+            #collapseCompartilhamento
+                .accordion-body
+                    display: flex
+                    flex-direction: column
+                    max-width: 100px
+                    a
+                        margin-top: 16px
+                        font-family: 'Inter'
+                        font-style: normal
+                        font-weight: 500
+                        font-size: 16px
+                        line-height: 24px
+                        letter-spacing: -0.011em
+                        color: #1E1360 !important
+                        text-decoration: none
+                        white-space: nowrap
+
+            #containerCompartilhamento
+                margin-top: 46px
+            .sublinhado
+                text-decoration: underline !important
+            .container_caso
+                h4
+                    font-family: 'Urbanist'
+                    font-style: normal
+                    font-weight: 700
+                    font-size: 20px
+                    line-height: 24px
+                    text-transform: uppercase
+                    color: #1E1360
+    .rodape
+        max-width: 1300px
+        padding: 0 15px
+        margin: 0 auto
+        p
+            font-family: 'Inter'
+            font-style: normal
+            font-weight: 400
+            font-size: 16px
+            line-height: 24px
+            letter-spacing: -0.011em
+            margin: 0
+            color: $cor-texto
+            max-width: 549px
+
+            @media (max-width: 991px)
+              margin-bottom: 32px
+        a
+            text-decoration: none
+
+        >.row
+            align-items: center
+            min-height: 101px
+            // max-height: 101px
+            // padding-left: 82px
+            // padding-right: 83px
+            .container_rodape
+                display: flex
+                flex-wrap: wrap
+                justify-content: space-around
+                // justify-content: right
+                .privacidade
+                    font-family: 'Inter'
+                    font-style: normal
+                    font-weight: 400
+                    font-size: 16px
+                    line-height: 24px
+                    letter-spacing: -0.011em
+                    // margin-right: 29px
+                    white-space: nowrap
+                    a
+                        color: $cor-texto
+                        text-decoration: none !important
+                .cookies
+                    font-family: 'Inter'
+                    font-style: normal
+                    font-weight: 400
+                    font-size: 16px
+                    line-height: 24px
+                    letter-spacing: -0.011em
+                    // margin-right: 61px
+                    white-space: nowrap
+                    a
+                        color: $cor-texto
+                        text-decoration: none !important
+
+    .separador
+        border-color: #CEDDE5
+        opacity: 1
+        width: calc(100% + 30px)
+        margin-left: -15px !important
+        margin: 0
+
+@media screen and (max-width: 600px)
+    footer
+        .conteudo
+            padding-bottom: 0 !important
+            .accordion-item
+                #headingFour
+                    button
+                        margin-right: 0 !important
+                .accordion-button
+                    .arrow
+                        margin-left: auto !important
+
+                .accordion-button::after
+                    margin-left: 0 !important
+                #headingNine
+                    margin-top: 0 !important
+            #containerCompartilhamento
+                >div:nth-child(1)
+                    margin-bottom: 28px
+                >div:nth-child(2)
+                    margin-bottom: 42px
+                >div:nth-child(3)
+                    margin-bottom: 32px
+                >div:nth-child(4)
+                    margin-bottom: 42px
+                .container_seccao
+                    display: flex
+                    flex-direction: column
+                    max-width: 149px
+                    h4
+                        font-family: 'Urbanist'
+                        font-style: normal
+                        font-weight: 700
+                        font-size: 20px
+                        line-height: 24px
+                        text-transform: uppercase
+                        color: #1E1360
+                        padding-bottom: 16px
+                        margin-bottom: 16px
+                        border-bottom: 2px solid #E6E5EA
+                    a
+                        font-family: 'Inter'
+                        font-style: normal
+                        font-weight: 500
+                        font-size: 16px
+                        line-height: 24px
+                        letter-spacing: -0.011em
+                        color: #1E1360
+                        text-decoration: none
+                        margin-bottom: 16px
+                #collapseCompartilhamento
+                    .accordion-body
+                        max-width: 300px !important
+                        a
+                            white-space: normal !important
+
+        .rodape
+            >.row
+                padding-left: 0 !important
+                padding-right: 0 !important
+                max-height: none !important
+                p
+                    max-width: 549px
+                    margin-top: 24px
+                .container_rodape
+                    display: block !important
+                .link__mobile
+                    text-align: center
+                    margin: 37px 0px 71px 0px
+                    h3
+                        font-family: 'Inter'
+                        font-style: normal
+                        font-weight: 400
+                        font-size: 16px
+                        line-height: 24px
+                        text-align: right
+                        letter-spacing: -0.011em
+                        color: #1E1360
+                        text-align: center
+                .cookies
+                    margin-top: 16px
+                .privacidade
+                    margin-top: 16px
+                    margin-bottom: 37px
+
+@media screen and (max-width: 416px)
+    footer
+        .logo
+            flex-direction: column
+            .logos
+                margin-top: 24px

@@ -1,0 +1,62 @@
+.potential {
+  padding: 80px 0;
+  background: #F7F5FF;
+}
+
+.potential .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 60px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.potential .flex .flex__column:first-child {
+  width: 100%;
+}
+
+.potential .flex .flex__column .disclaimer {
+  font-family: 'Urbanist';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #806DFB;
+  margin-bottom: 15px;
+}
+
+.potential .flex .flex__column .title {
+  max-width: 565px;
+  font-family: 'Urbanist';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 47px;
+  color: #1E1360;
+  margin: 0;
+}
+
+.potential .flex .flex__column .button {
+  white-space: nowrap;
+  font-size: 20px;
+}
+
+@media (max-width: 991px) {
+  .potential {
+    padding: 48px 24px;
+  }
+  .potential .flex {
+    padding: 0;
+    display: block;
+    text-align: center;
+  }
+  .potential .flex .flex__column .title {
+    max-width: initial;
+  }
+  .potential .flex .flex__column .button {
+    margin: 48px auto 0;
+  }
+}
+/*# sourceMappingURL=potential.css.map */

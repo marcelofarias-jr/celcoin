@@ -1,0 +1,143 @@
+.market {
+  padding: 70px 0 0;
+  width: 100%;
+
+  .market__content {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 740px;
+
+    h3 {
+      font-family: 'Urbanist';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 60px;
+      text-align: center;
+      color: #1E1360;
+      margin-bottom: 36px;
+
+      strong {
+        font-weight: 700;
+        position: relative;
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -12px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 100%;
+          height: 6px;
+          background: linear-gradient(90deg, rgba(128, 109, 250, 0) 0.97%, #806DFA 48.74%, rgba(128, 109, 250, 0) 100%);
+        }
+      }
+    }
+
+    .subtitle {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+      text-align: center;
+      color: #1E1360;
+      margin-bottom: 100px;
+    }
+  }
+
+  .market__watch {
+    .watch__image {
+      width: 100%;
+      height: auto;
+      display: none;
+    }
+  }
+
+  @media (max-width: 992px) {
+    padding: 80px 0;
+
+    .market__content {
+      padding: 0 24px;
+
+      .title {
+        font-size: 32px;
+        line-height: 42px;
+      }
+
+      .subtitle {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 40px;
+      }
+    }
+
+    .market__watch {
+      .watch__image {
+        width: 200%;
+        height: auto;
+        display: block;
+        position: relative;
+        left: -50%;
+      }
+    }
+  }
+}
+
+.animation__wrapper {
+  width: 100%;
+  height: 480px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 111px;
+  
+  @media (max-width: 991px) {
+    display: none;
+  }
+}
+
+.animation__wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100%;
+  background: linear-gradient(to left, #fff 0%, rgba(0,0,0,0) 100%);
+  z-index: 1;
+}
+
+.animation__wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100%;
+  background: linear-gradient(to right, #fff 0%, rgba(0,0,0,0) 100%);
+  z-index: 1;
+}
+
+#holder {
+  position: absolute;
+  height: 100vh;
+  width: 200vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+#holder span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  margin: 50px;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}

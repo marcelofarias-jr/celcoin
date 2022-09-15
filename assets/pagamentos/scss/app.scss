@@ -1,0 +1,82 @@
+// Guttenberg and Block Editor Styles (columns, etc)
+@import "./_normalizer.scss";
+
+
+
+@import "./components/_textos_titulos.scss";
+@import "./components/_banner.scss";
+@import "./components/_banner_documentacao.scss";
+@import "./components/_banner_logos.scss";
+@import "./components/_banner_start.scss";
+@import "./components/_banner.scss";
+@import "./components/_cards_animados.scss";
+@import "./components/_cards_categorias.scss";
+@import "./components/_destaque_com_imagem.scss";
+@import "./components/_destaque_foco.scss";
+@import "./components/_formulario.scss";
+@import "./components/_footer.scss";
+@import "./components/_navbar.scss";
+@import "./components/_accordeon.scss";
+@import "./components/_cards_impacto.scss";
+@import "./components/_cards_posts.scss";
+@import "./components/_banner_sub_teste.scss";
+@import "./components/_carrosel_categorias.scss";
+@import "./components/_cards_recursos.scss";
+@import "./components/_ctas.scss";
+@import "./components/_mapa_do_site.scss";
+@import "./components/_carrosel_calendario.scss";
+@import "./components/_banner_video.scss";
+@import "./components/_cores.scss";
+@import "./components/_carrosel_api.scss";
+
+ 
+@import "./pages/_caso_de_uso.scss";
+@import "./pages/_contato.scss";
+@import "./pages/_home.scss";
+@import "./pages/_mapa_do_site.scss";
+@import "./pages/_produtos.scss";
+@import "./pages/_single_produto.scss";
+@import "./pages/_sobre.scss";
+@import "./pages/_solucoes.scss";
+
+
+// font-family: 'Inter', sans-serif;
+// font-family: 'Urbanist', sans-serif;
+
+
+
+body {
+  p {
+    &:not(.title) {
+      margin-bottom: 0;
+    }
+  }
+  // overflow: hidden;
+  button {
+    outline: none !important;
+  }
+  a {
+    text-decoration: none;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    .conteudo-grid {
+      max-width: 1200px;
+      margin: 0 auto;
+  
+    }
+  }
+
+}
+
+body, html {
+  max-width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+
+
+
+  .scroll-controll{
+    overflow: hidden;
+  }
+}

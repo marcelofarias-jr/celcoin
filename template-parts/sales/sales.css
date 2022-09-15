@@ -1,0 +1,143 @@
+.sales {
+  padding: 111px 0 170px;
+}
+.sales .sales__card {
+  background: #FFFFFF;
+  box-shadow: 0px 57px 91px -37px rgba(26, 14, 75, 0.3);
+  border-radius: 20px;
+  padding: 109px 87px;
+}
+.sales .sales__card--flex {
+  display: flex;
+}
+.sales .sales__card--flex .flex__column h1 {
+  max-width: 455px;
+  margin-top: 0 !important;
+  margin-right: 67px !important;
+  margin-bottom: 43px !important;
+  font-family: "Urbanist";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 60px;
+  color: #1E1360;
+}
+.sales .sales__card--flex .flex__column .sales__docs {
+  max-width: 378px;
+  padding: 16px;
+  display: block;
+  border-radius: 5px;
+  transition: background 150ms ease-in-out;
+  text-decoration: none;
+}
+/* .sales .sales__card--flex .flex__column .sales__docs:first-child {
+  background: #F7F5FF;
+} */
+.sales .sales__card--flex .flex__column .sales__docs .title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #1E1360;
+  position: relative;
+  padding-left: 45px;
+  transition: color 150ms ease-in-out;
+}
+.sales .sales__card--flex .flex__column .sales__docs .title span {
+  display: block;
+  max-width: 250px;
+}
+.sales .sales__card--flex .flex__column .sales__docs .title svg:first-child {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.sales .sales__card--flex .flex__column .sales__docs .title svg:last-child {
+  position: absolute;
+  right: 0;
+  top: calc(50% - 2px);
+  transform: translateY(-50%);
+}
+.sales .sales__card--flex .flex__column .sales__docs .description {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #1E1360;
+  max-width: 311px;
+  margin-bottom: 0;
+}
+.sales .sales__card--flex .flex__column .sales__docs:not(:last-child) {
+  margin-bottom: 30px;
+}
+.sales .sales__card--flex .flex__column .sales__docs:hover .title {
+  color: #806DFB;
+}
+.sales .sales__card--flex .flex__column .sales__docs:hover {
+  background-color:  #F7F5FF;
+}
+@media (min-width: 992px) {
+  .sales .sales__card--flex .flex__column:first-child {
+    width: 100%;
+  }
+  .sales .sales__card--flex .flex__column:last-child {
+    width: 50%;
+  }
+}
+@media (max-width: 991px) {
+  .sales {
+    padding: 70px 0;
+  }
+  .sales .sales__card {
+    padding: 60px 20px;
+  }
+  .sales .sales__card--flex {
+    display: block;
+  }
+  .sales .sales__card--flex .flex__column h1 {
+    text-align: center;
+    font-size: 32px;
+    line-height: 42px;
+    max-width: initial;
+    display: block;
+    margin: 0 auto 24px !important;
+  }
+  .sales .sales__card--flex .flex__column .button {
+    display: table;
+    margin: 0 auto 42px;
+  }
+  .sales .sales__card--flex .flex__column .sales__docs {
+    display: table;
+    margin: 0 auto;
+    padding: 16px 36px;
+    min-width: 325px;
+  }
+  .sales .sales__card--flex .flex__column .sales__docs .title {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 14px;
+  }
+  .sales .sales__card--flex .flex__column .sales__docs .title span {
+    display: block;
+    max-width: 165px;
+  }
+  .sales .sales__card--flex .flex__column .sales__docs .description {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .sales .sales__card--flex .flex__column .sales__docs:not(:last-child) {
+    margin-bottom: 16px;
+  }
+  .sales .sales__card--flex .flex__column .sales__docs:last-child {
+    border: 1px solid #E6E5EA;
+  }
+}
+@media (max-width: 395px) {
+  .sales .sales__card--flex .flex__column .sales__docs {
+    min-width: initial;
+    width: 100%;
+  }
+}

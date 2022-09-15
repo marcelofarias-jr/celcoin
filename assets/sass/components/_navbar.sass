@@ -1,0 +1,275 @@
+header
+
+    .dropdown-toggle::after
+        content: unset
+    // padding: $padding-recuado
+        height: 6rem
+        margin: 0
+        line-height: 3.375rem
+    // width: 100%
+    // position: absolute
+        width: 77%
+        margin: 0 auto
+        z-index: 9999
+    //background: #F7F5FF
+    //backdrop-filter: blur(19px)
+    nav
+        width: 100%
+        display: flex
+    .navbar-purple
+        background-color: #DBDBDB
+    .navbar-white
+        background-color: #ffffff
+    .navbar
+        z-index: 2
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        padding: 1.5rem 12.5rem 1.625rem 12.5rem
+        .menu__responsivo
+            width: 100%
+            display: flex
+            flex-direction: row
+            flex-wrap: nowrap
+            justify-content: space-between
+            button
+                border: none
+
+    .navbar-collapse
+        .navbar-nav
+            width: 100%
+            flex-wrap: nowrap
+            justify-content: flex-end
+            .formulario__dropdown
+                line-height: 1rem
+                .btn
+                    height: 3rem
+                    width: 5.563rem
+                    border-radius: 3rem
+                    background-color: $cor-primária
+                    display: flex
+                    align-items: center
+                    span
+                        color: white
+                        font-size: 10px
+                        height: 14px
+                        margin-left: 11.67px
+            .nav-item
+                width: auto
+                margin-left: 1rem
+                .dropdown-menu
+                    border: none
+                .dropdown__solucoes
+                    background-color: white
+                    width: 78.125rem
+                    right: -45rem
+                    padding: 2rem 1rem
+                    border: none
+                    .menu-solucoes__esquerda
+                        width: 50%
+                        height: 100%
+                        float: left
+                        padding-right: 4rem
+                        padding-left: 1rem
+                        display: flex
+                        flex-direction: column
+                        wrap: wrap
+                        .sup
+                            width: 100%
+                            text-align: left
+                            display: flex
+                            margin-top: 1.5rem
+                            h2
+                                padding-left: 1rem
+                                padding-right: 2rem
+                                color: $cor-texto
+                                font-size: 2.813rem
+                            .borda
+                                width: 1rem
+                                height: 13rem
+                                background-color: $cor-primária
+                                border-radius: 50px
+                        .inf
+                            width: 100%
+                            .btn
+                                height: 3rem
+                                width: auto
+                                margin-left: 2rem
+                                padding-left: 1rem
+                                border-radius: 3rem
+                                background-color: $cor-primária
+                                color: white
+                                padding: 0 2rem
+                                margin-top: 2rem
+                                display: flex
+                                align-items: center
+                                justify-content: center
+                                img
+                                    margin-left: 1rem
+                                    height: 10px
+                                    width: auto
+                    .menu-solucoes__direita
+                        width: 50%
+                        float: right
+                        border-left: 2px solid #E6E5EA
+                        padding-left: 2rem
+                        .btn
+                            height: auto
+                            width: 15rem
+                            border-radius: 3rem
+                            color: $cor-primária
+                            border: 1px solid $cor-primária
+                            margin-top: 1rem
+                            display: flex
+                            align-items: center
+                            justify-content: center
+                            img
+                                margin-left: 1rem
+                                height: 10px
+                                width: auto
+                        h3
+                            text-transform: uppercase
+                            color: $cor-texto
+                            font-family: $Inter
+                            font-size: 0.875rem
+                            line-height: 1.313rem
+                            font-weight: 700
+                        .menu__apis
+                            display: flex
+                            flex-direction: row
+                            flex-wrap: wrap
+                            .menu__apis__item
+                                display: flex
+                                flex-direction: row
+                                align-items: center
+                                width: 50%
+                                padding: .2rem 0
+                                img
+                                    height: 2.79rem
+                                    width: auto
+                                h4
+                                    color: $cor-texto
+                                    font-family: $Inter
+                                    font-weight: 500
+                                    line-height: 1.5rem
+                                    font-size: 1rem
+                                    margin-left: 1rem
+                                a
+                                    text-decoration: none
+                .dropdown__develop
+                    .dropdown-menu
+                        padding: 4.406rem 3rem
+                        width: 60rem
+                        right: -6rem
+                        .develop__menu__esquerda
+                            width: 40%
+                            height: 100%
+                            float: left
+                            padding-right: 3rem
+                            display: flex
+                            .borda
+                                width: 1rem
+                                display: block
+                                height: auto
+                                background-color: $cor-primária
+                                border-radius: 50px
+                            h2
+                                font-family: $Urbanist
+                                font-weight: bold
+                                font-size: 1.75rem
+                                line-height: 2.25rem
+                                color: $cor-texto
+                                padding-left: 1rem
+                        .develop__menu__direita
+                            float: right
+                            width: 60%
+                            border-left: 2px solid #E6E5EA
+                            padding-left: 4rem
+                            h3
+                                font-family: $Inter
+                                font-weight: 700
+                                font-size: 1rem
+                                line-height: 1.5rem
+                                color: $cor-texto
+                            .menu__direita__conteudo
+                                display: flex
+                                flex-wrap: wrap
+                                flex-direction: row
+                                .develop__link
+                                    width: 50%
+                                    line-height: 2rem
+                                    a
+                                        color: $cor-texto
+            .formulario__dropdown
+                height: auto
+                .dropdown-menu
+                    width: 39.625rem
+                    right: -11rem
+                    height: 5rem
+                    border-radius: 0
+                #regForm
+                    padding: 0 3.5rem 3rem 4rem
+                    background-color: white
+                    h1
+                        font-family: $Urbanist
+                        font-weight: 700
+                        font-size: 3rem
+                        line-height: 3.75rem
+                        color: $cor-texto
+                input
+                    margin-top: 0.813rem
+                    border-left: .1rem solid $cor-primária
+                .tab
+                    display: none
+                    .form-group
+                        label
+                            font-family: $Inter
+                            font-weight: 500
+                            font-size: 1.25rem
+                            line-height: 1.875rem
+                            color: $cor-texto
+                .tab__conteudo
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    text-align: center
+                    padding-top: 9rem
+                    h3
+                        color: $cor-texto
+                        font-family: $Urbanist
+                        font-weight: 600
+                        font-size: 2.25rem
+                        line-height: 3rem
+                    p
+                        color: $cor-texto
+                        font-family: $Inter
+                        font-weight: 400
+                        font-size: 1.25rem
+                        line-height: 1.875rem
+                .form__controles
+                    margin-top: 1rem
+                    width: 100%
+                    button
+                        width: 100%
+                .step
+                    padding: 1px 1.6rem
+                    border: .1rem solid $cor-primária
+                    background-color: white
+                .step.active
+                    opacity: 1
+                    border: 1px solid $cor-primária
+                    background-color: $cor-primária
+                .step.finish
+                    background-color: $cor-primária
+
+    .nav-link
+        color: $cor-texto
+        font-size: 1.125rem
+        font-weight: 400
+        line-height: 1.5rem
+        display: flex
+        align-items: center
+        span
+            font-size: 30px
+            height: 9px
+            margin-left: 6px

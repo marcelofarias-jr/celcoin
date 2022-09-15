@@ -1,0 +1,101 @@
+#banner-documentacao {
+    padding: 80px 25px;
+    .box-banner {
+        margin: 0 auto;
+        border-radius: 20px;
+        padding: 60px 15px;
+        max-width: 360px;
+        box-shadow: 0px 57px 91px -37px rgba(26, 14, 75, 0.3);
+        a {
+            display: block;
+        }
+        .box-esquerda {
+            div {
+                text-align: center;
+                font-weight: bold;
+                margin-bottom: 30px;
+            }
+            a {
+                margin: 0 auto;
+                svg {
+                  transform: scale(1.5) rotate(270deg);
+                  margin-left: 12px;
+                }
+            }
+        }
+        .box-direita {
+            margin-top: 40px;
+            .card-doc {
+              transition: 1s ease;
+                text-decoration: none;
+                padding: 8%;
+                border: 1px solid #F7F5FF;
+                .box-titulo {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-bottom: 12px;
+                    .box-tit-esq {
+                        display: flex;
+                        align-items: center;
+                    }
+                    img {
+                        width: 21px;
+                        height: auto;
+                        margin-right: 15px;
+                    }
+                }
+                border-radius: 10px;
+                margin-bottom: 16px;
+            }
+            .card-doc:hover {
+              background: #F7F5FF;
+            }
+        }
+    }
+    @media only screen and (min-width: 1200px) {
+        padding: 100px 0px 180px 0px;
+        .box-banner {
+            border-radius: 20px;
+            padding: 100px 80px;
+            max-width: 1200px;
+            display: flex;
+            a {
+                display: block;
+            }
+            .box-esquerda {
+                width: 55%;
+                div {
+                    text-align: left;
+                    font-weight: bold;
+                    margin-bottom: 50px;
+                }
+                a {
+                    margin: 0;
+                }
+            }
+            .box-direita {
+                width: 45%;
+                margin-top: 0px;
+                margin-left: 65px;
+                .card-doc {
+                    max-width: 380px;
+                    padding: 20px 24px;
+                    border: 1px solid #F7F5FF;
+                    .box-titulo {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin-bottom: 12px;
+                        img {
+                            width: 27px;
+                            height: auto;
+                        }
+                    }
+                    border-radius: 10px;
+                    margin-bottom: 16px;
+                }
+            }
+        }  
+    }
+}

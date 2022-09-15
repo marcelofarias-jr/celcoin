@@ -1,0 +1,761 @@
+$color-dark: #1E1360;
+$color-purple: #806DFB;
+$color-dark-alternate: #27176C;
+$color-white: #fff;
+$color-green: #49FADE;
+$color-green-alternate: #99FFEB;
+
+$color-yellow: #FAEA00;
+$color-yellow-alternate: #D1C400;
+
+$color-orange: #F96500;
+$color-orange-alternate: #DD5900;
+
+$color-aqua: #0CEADF;
+$color-aqua-alternate: #00D4CA;
+
+$color-blue: #00AEEF;
+$color-blue-alternate: #0098D1;
+
+$color-magenta: #4600E0;
+$color-magenta-alternate: #31009C;
+
+$color-pink: #A11AFF;
+$color-pink-alternate: #7B00D1;
+
+$color-red: #FA2378;
+$color-red-alternate: #D61C66;
+
+$color-dark-green: #93E500;
+$color-dark-green-alternate: #84CE00;
+
+$color-light-green: #00FFAA;
+$color-light-green-alternate: #00DC93;
+
+$color-salmon: #FF8A8A;
+$color-salmon-alternate: #E56D6D;
+
+.button {
+  border-radius: 30px;
+  padding: 18px 32px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  text-decoration: none;
+  transition: all 150ms ease-in-out;
+  display: table;
+  border: none;
+  cursor: pointer;
+
+  &[disabled] {
+    opacity: 0.7;
+    pointer-events: none;
+  }
+
+  @media (max-width: 991px) {
+    font-size: 16px;
+    position: relative;
+  }
+
+  svg {
+    transform: translateY(-1px) rotate(-90deg) scale(1.4);
+    margin-left: 10px;
+
+    path {
+      transition: fill 150ms ease-in-out;
+    }
+  }
+
+  &--default {
+    background: $color-purple;
+    color: $color-white;
+
+    svg {
+      path {
+        fill: $color-white;
+      }
+    }
+
+    &:hover {
+      background: $color-dark-alternate !important;
+      color: $color-white !important;
+    }
+  }
+
+  &--dark {
+    background: $color-dark;
+    color: $color-white;
+    border: 2px solid $color-dark;
+
+    svg {
+      path {
+        fill: $color-white;
+      }
+    }
+
+    &:hover {
+      background: transparent;
+      color: $color-dark;
+
+      svg {
+        path {
+          fill: $color-dark;
+        }
+      }
+    }
+  }
+
+  &--green {
+    background: $color-green;
+    color: $color-dark;
+
+    svg {
+      path {
+        fill: $color-dark;
+      }
+    }
+
+    &:hover {
+      background: $color-green-alternate;
+      color: $color-dark;
+    }
+  }
+
+  &--yellow {
+    background: $color-yellow;
+    color: $color-dark;
+
+    svg {
+      path {
+        fill: $color-dark;
+      }
+    }
+
+    &:hover {
+      background: $color-yellow-alternate;
+      color: $color-dark;
+    }
+  }
+
+  &--yellow-secondary {
+    background: $color-dark;
+    color: $color-yellow;
+    border: 2px solid $color-dark;
+
+    svg {
+      path {
+        fill: $color-yellow;
+      }
+    }
+
+    &:hover {
+      color: $color-dark;
+      background: transparent;
+
+      svg {
+        path {
+          fill: $color-dark;
+        }
+      }
+    }
+  }
+
+  &--orange {
+    background: $color-orange;
+    color: $color-white;
+
+    svg {
+      path {
+        fill: $color-white;
+      }
+    }
+
+    &:hover {
+      background: $color-orange-alternate;
+      color: $color-white;
+    }
+  }
+
+  &--orange-secondary {
+    background: $color-white;
+    color: $color-orange;
+    border: 2px solid $color-white;
+
+    svg {
+      path {
+        fill: $color-orange;
+      }
+    }
+
+    &:hover {
+      color: $color-orange;
+      background: transparent;
+      border: 2px solid $color-orange;
+
+      svg {
+        path {
+          fill: $color-orange;
+        }
+      }
+    }
+  }
+
+  &--orange-secondary-inverse {
+    background: $color-white;
+    color: $color-orange;
+    border: 2px solid $color-white;
+
+    svg {
+      path {
+        fill: $color-orange;
+      }
+    }
+
+    &:hover {
+      color: $color-white;
+      background: transparent;
+      border: 2px solid $color-white;
+
+      svg {
+        path {
+          fill: $color-white;
+        }
+      }
+    }
+  }
+
+  &--aqua {
+    background: $color-aqua;
+    color: $color-dark;
+
+    svg {
+      path {
+        fill: $color-dark;
+      }
+    }
+
+    &:hover {
+      background: $color-aqua-alternate;
+      color: $color-dark;
+    }
+  }
+
+  &--aqua-secondary {
+    background: $color-white;
+    color: $color-aqua;
+    border: 2px solid $color-white;
+
+    svg {
+      path {
+        fill: $color-aqua;
+      }
+    }
+
+    &:hover {
+      color: $color-aqua;
+      background: transparent;
+      border: 2px solid $color-aqua;
+
+      svg {
+        path {
+          fill: $color-aqua;
+        }
+      }
+    }
+  }
+
+  &--aqua-secondary-inverse {
+    background: $color-white;
+    color: $color-aqua;
+    border: 2px solid $color-white;
+
+    svg {
+      path {
+        fill: $color-aqua;
+      }
+    }
+
+    &:hover {
+      color: $color-white;
+      background: transparent;
+      border: 2px solid $color-white;
+
+      svg {
+        path {
+          fill: $color-white;
+        }
+      }
+    }
+  }
+
+  &--blue {
+    background: $color-blue;
+    color: $color-white;
+
+    svg {
+      path {
+        fill: $color-white;
+      }
+    }
+
+    &:hover {
+      background: $color-blue-alternate;
+      color: $color-white;
+    }
+  }
+
+  &--blue-secondary {
+    background: $color-white;
+    color: $color-blue;
+    border: 2px solid $color-white;
+
+    svg {
+      path {
+        fill: $color-blue;
+      }
+    }
+
+    &:hover {
+      color: $color-blue;
+      background: transparent;
+      border: 2px solid $color-blue;
+
+      svg {
+        path {
+          fill: $color-blue;
+        }
+      }
+    }
+  }
+  &--blue-secondary-inverse {
+    background: $color-white;
+    color: $color-blue;
+    border: 2px solid $color-white;
+
+    svg {
+      path {
+        fill: $color-blue;
+      }
+    }
+
+    &:hover {
+      color: $color-white;
+      background: transparent;
+      border: 2px solid $color-white;
+
+      svg {
+        path {
+          fill: $color-white;
+        }
+      }
+    }
+  }
+
+  &--magenta {
+    background: $color-magenta;
+    color: $color-white;
+
+    svg {
+      path {
+        fill: $color-white;
+      }
+    }
+
+    &:hover {
+      background: $color-magenta-alternate;
+      color: $color-white;
+    }
+  }
+
+  &--magenta-secondary {
+    background: $color-white;
+    color: $color-magenta;
+    border: 2px solid $color-white;
+
+    svg {
+      path {
+        fill: $color-magenta;
+      }
+    }
+
+    &:hover {
+      color: $color-magenta;
+      background: transparent;
+      border: 2px solid $color-magenta;
+
+      svg {
+        path {
+          fill: $color-magenta;
+        }
+      }
+    }
+  }
+  &--magenta-secondary-inverse {
+    background: $color-white;
+    color: $color-magenta;
+    border: 2px solid $color-white;
+
+    svg {
+      path {
+        fill: $color-magenta;
+      }
+    }
+
+    &:hover {
+      color: $color-white;
+      background: transparent;
+      border: 2px solid $color-white;
+
+      svg {
+        path {
+          fill: $color-white;
+        }
+      }
+    }
+  }
+
+  &--pink {
+    background: $color-pink;
+    color: $color-white;
+
+    svg {
+      path {
+        fill: $color-white;
+      }
+    }
+
+    &:hover {
+      background: $color-pink-alternate;
+      color: $color-white;
+    }
+  }
+
+  &--pink-secondary {
+    background: $color-white;
+    color: $color-pink;
+    border: 2px solid $color-white;
+
+    svg {
+      path {
+        fill: $color-pink;
+      }
+    }
+
+    &:hover {
+      color: $color-pink;
+      background: transparent;
+      border: 2px solid $color-pink;
+
+      svg {
+        path {
+          fill: $color-pink;
+        }
+      }
+    }
+  }
+  &--pink-secondary-inverse {
+    background: $color-white;
+    color: $color-pink;
+    border: 2px solid $color-white;
+
+    svg {
+      path {
+        fill: $color-pink;
+      }
+    }
+
+    &:hover {
+      color: $color-white;
+      background: transparent;
+      border: 2px solid $color-white;
+
+      svg {
+        path {
+          fill: $color-white;
+        }
+      }
+    }
+  }
+  &--red {
+    background: $color-red;
+    color: $color-white;
+
+    svg {
+      path {
+        fill: $color-white;
+      }
+    }
+
+    &:hover {
+      background: $color-red-alternate;
+      color: $color-white;
+    }
+  }
+
+  &--red-secondary {
+    background: $color-white;
+    color: $color-red;
+    border: 2px solid $color-white;
+
+    svg {
+      path {
+        fill: $color-red;
+      }
+    }
+
+    &:hover {
+      color: $color-red;
+      background: transparent;
+      border: 2px solid $color-red;
+
+      svg {
+        path {
+          fill: $color-red;
+        }
+      }
+    }
+  }
+  &--red-secondary-inverse {
+    background: $color-white;
+    color: $color-red;
+    border: 2px solid $color-white;
+
+    svg {
+      path {
+        fill: $color-red;
+      }
+    }
+
+    &:hover {
+      color: $color-white;
+      background: transparent;
+      border: 2px solid $color-white;
+
+      svg {
+        path {
+          fill: $color-white;
+        }
+      }
+    }
+  }
+
+  &--dark-green {
+    background: $color-dark-green;
+    color: $color-dark;
+
+    svg {
+      path {
+        fill: $color-dark;
+      }
+    }
+
+    &:hover {
+      background: $color-dark-green-alternate;
+      color: $color-dark;
+    }
+  }
+
+  &--dark-green-secondary {
+    background: $color-white;
+    color: $color-dark-green;
+    border: 2px solid $color-white;
+
+    svg {
+      path {
+        fill: $color-dark-green;
+      }
+    }
+
+    &:hover {
+      color: $color-dark-green;
+      background: transparent;
+      border: 2px solid $color-dark-green;
+
+      svg {
+        path {
+          fill: $color-dark-green;
+        }
+      }
+    }
+  }
+  &--dark-green-secondary-inverse {
+    background: $color-white;
+    color: $color-dark-green;
+    border: 2px solid $color-white;
+
+    svg {
+      path {
+        fill: $color-dark-green;
+      }
+    }
+
+    &:hover {
+      color: $color-white;
+      background: transparent;
+      border: 2px solid $color-white;
+
+      svg {
+        path {
+          fill: $color-white;
+        }
+      }
+    }
+  }
+  &--light-green {
+    background: $color-light-green;
+    color: $color-dark;
+
+    svg {
+      path {
+        fill: $color-dark;
+      }
+    }
+
+    &:hover {
+      background: $color-light-green-alternate;
+      color: $color-dark;
+    }
+  }
+
+  &--light-green-secondary {
+    background: $color-white;
+    color: $color-light-green;
+    border: 2px solid $color-white;
+
+    svg {
+      path {
+        fill: $color-light-green;
+      }
+    }
+
+    &:hover {
+      color: $color-light-green;
+      background: transparent;
+      border: 2px solid $color-light-green;
+
+      svg {
+        path {
+          fill: $color-light-green;
+        }
+      }
+    }
+  }
+
+  &--salmon {
+    background: $color-salmon;
+    color: $color-dark;
+
+    svg {
+      path {
+        fill: $color-dark;
+      }
+    }
+
+    &:hover {
+      background: $color-salmon-alternate;
+      color: $color-dark;
+    }
+  }
+
+  &--salmon-secondary {
+    background: $color-white;
+    color: $color-salmon;
+    border: 2px solid $color-white;
+
+    svg {
+      path {
+        fill: $color-salmon;
+      }
+    }
+
+    &:hover {
+      color: $color-salmon;
+      background: transparent;
+      border: 2px solid $color-salmon;
+
+      svg {
+        path {
+          fill: $color-salmon;
+        }
+      }
+    }
+  }
+
+  &--salmon-secondary-inverse {
+    background: $color-white;
+    color: $color-salmon;
+    border: 2px solid $color-white;
+
+    svg {
+      path {
+        fill: $color-salmon;
+      }
+    }
+
+    &:hover {
+      color: $color-white;
+      background: transparent;
+      border: 2px solid $color-white;
+
+      svg {
+        path {
+          fill: $color-white;
+        }
+      }
+    }
+  }
+
+  &--outlined {
+    color: $color-purple;
+    border: 2px solid $color-purple;
+    background: transparent;
+
+    svg {
+      path {
+        fill: $color-purple;
+      }
+    }
+
+    &:hover {
+      color: $color-white;
+      background: $color-purple;
+
+      svg {
+        path {
+          fill: $color-white;
+        }
+      }
+    }
+  }
+
+  &--default-inverse {
+    color: $color-dark-alternate;
+    border: 2px solid $color-dark-alternate;
+    background: transparent;
+
+    svg {
+      path {
+        fill: $color-dark-alternate;
+      }
+    }
+
+    &:hover {
+      color: $color-white;
+      background: $color-dark-alternate;
+
+      svg {
+        path {
+          fill: $color-white;
+        }
+      }
+    }
+  }
+
+
+  &--small {
+    padding: 5px 18px;
+    height: 24px;
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,294 @@
+body, html {
+
+
+    strong {
+        display: inline-block;
+    }
+    strong::after {
+        display: none;
+    }
+
+// Sublinhados Mobile
+    .sub-azul-mob {
+        div::after {
+            background: linear-gradient(90deg, rgba(73, 250, 222, 0) 0%, #1E1360 50%, rgba(73, 250, 222, 0) 100%);
+            content: "";
+            display: block;
+            height: 6px;
+            width: 203px;
+            margin: 0 auto;
+            margin-top: 16px;
+        }
+    }
+    .sub-branco-mob {
+        div::after {
+            background: linear-gradient(90deg, rgba(73, 250, 222, 0) 0%, #FFFFFF 50%, rgba(73, 250, 222, 0) 100%);
+            content: "";
+            display: block;
+            height: 6px;
+            width: 203px;
+            margin: 0 auto;
+            margin-top: 16px;
+        }
+    }
+    .sub-amarelo-mob {
+        div::after {
+            background: linear-gradient(90deg, rgba(73, 250, 222, 0) 0%, #FAEA00 50%, rgba(73, 250, 222, 0) 100%);
+            content: "";
+            display: block;
+            height: 6px;
+            width: 203px;
+            margin: 0 auto;
+            margin-top: 16px;
+        }
+    }
+    .sub-laranja-mob {
+        div::after {
+            background: linear-gradient(90deg, rgba(73, 250, 222, 0) 0%, #F96500 50%, rgba(73, 250, 222, 0) 100%);
+            content: "";
+            display: block;
+            height: 6px;
+            width: 203px;
+            margin: 0 auto;
+            margin-top: 16px;
+        }
+    }
+    .sub-azul-claro-mob {
+        div::after {
+            background: linear-gradient(90deg, rgba(73, 250, 222, 0) 0%, #21D6CD 50%, rgba(73, 250, 222, 0) 100%);
+            content: "";
+            display: block;
+            height: 6px;
+            width: 203px;
+            margin: 0 auto;
+            margin-top: 16px;
+        }
+    }
+    .sub-azul-medio-mob {
+        div::after {
+            background: linear-gradient(90deg, rgba(73, 250, 222, 0) 0%, #00BAFF 50%, rgba(73, 250, 222, 0) 100%);
+            content: "";
+            display: block;
+            height: 6px;
+            width: 203px;
+            margin: 0 auto;
+            margin-top: 16px;
+        }
+    }
+    .sub-azul-mob {
+        div::after {
+            background: linear-gradient(90deg, rgba(73, 250, 222, 0) 0%, #4600E0 50%, rgba(73, 250, 222, 0) 100%);
+            content: "";
+            display: block;
+            height: 6px;
+            width: 203px;
+            margin: 0 auto;
+            margin-top: 16px;
+        }
+    }
+    .sub-roxo-mob {
+        div::after {
+            background: linear-gradient(90deg, rgba(73, 250, 222, 0) 0%, #AF3CFF 50%, rgba(73, 250, 222, 0) 100%);
+            content: "";
+            display: block;
+            height: 6px;
+            width: 203px;
+            margin: 0 auto;
+            margin-top: 16px;
+        }
+    }
+    .sub-rosa-mob {
+        div::after {
+            background: linear-gradient(90deg, rgba(73, 250, 222, 0) 0%, #FF4F94 50%, rgba(73, 250, 222, 0) 100%);
+            content: "";
+            display: block;
+            height: 6px;
+            width: 203px;
+            margin: 0 auto;
+            margin-top: 16px;
+        }
+    }
+    .sub-verde-mob {
+        div::after {
+            background: linear-gradient(90deg, rgba(73, 250, 222, 0) 0%, #9DF400 50%, rgba(73, 250, 222, 0) 100%);
+            content: "";
+            display: block;
+            height: 6px;
+            width: 203px;
+            margin: 0 auto;
+            margin-top: 16px;
+        }
+    }
+    .sub-rosa-claro-mob {
+        div::after {
+            background: linear-gradient(90deg, rgba(73, 250, 222, 0) 0%, #EB8181 50%, rgba(73, 250, 222, 0) 100%);
+            content: "";
+            display: block;
+            height: 6px;
+            width: 203px;
+            margin: 0 auto;
+            margin-top: 16px;
+        }
+    }
+// cores textos
+    .texto-azul-escuro {
+        color: #1E1360;
+    }
+    .texto-branco {
+        color: #FFFFFF;
+        svg {
+          transform: scale(1.5) rotate(270deg);
+          path {
+            fill: #FFFFFF;
+          }
+        }
+    }
+    .texto-amarelo {
+        color: #FAEA00;
+    }
+    .texto-laranja {
+        color: #F96500;
+    }
+    .texto-azul-claro {
+        color: #21D6CD;
+    }
+    .texto-azul-medio {
+        color: #00BAFF;
+    }
+    .texto-azul {
+        color: #4600E0;
+    }
+    .texto-roxo {
+        color: #AF3CFF;
+    }
+    .texto-rosa {
+        color: #FF4F94;
+    }
+    .texto-verde {
+        color: #9DF400;
+    }
+    .texto-rosa-claro {
+        color: #EB8181;
+    }
+    .setinha-cor-doc {
+      svg {
+        transform: scale(1.5) rotate(270deg);
+        path {
+          fill: #806DFB;
+        }
+      }
+    }
+// backgrounds
+    .bg-amarelo {
+        background: #FAEA00;
+    }
+    .bg-laranja {
+        background: #F96500;
+    }
+    .bg-azul-claro {
+        background: #21D6CD;
+    }
+    .bg-azul-medio {
+        background: #00BAFF;
+    }
+    .bg-azul {
+        background: #4600E0;
+    }
+    .bg-azul-escuro {
+        background: #27176C;
+    }
+    .bg-roxo {
+        background: #AF3CFF;
+    }
+    .bg-rosa {
+        background: #FF4F94;
+    }
+    .bg-verde {
+        background: #9DF400;
+    }
+    .bg-rosa-claro {
+        background: #EB8181;
+    }
+    .bg-branco {
+        background: #FFFFFF;
+    }
+    .bg-transparent {
+        background: transparent;
+    }
+    .bg-cinza {
+        background:#F7F5FF;
+    }
+   
+    .bg-azul-claro-cta {
+        background: #49FADE;
+    }
+
+    @media only screen and (min-width: 1200px) {
+    strong::after {
+        content: "";
+        display: block;
+        height: 6px;
+    }
+    div::after {
+        display: none !important;
+    }
+    // Sublinhados Desktop
+    .sub-azul-desk {
+        strong::after {
+            background: linear-gradient(90deg, rgba(73, 250, 222, 0) 0%, #1E1360 50%, rgba(73, 250, 222, 0) 100%);
+        }
+    }
+    .sub-branco-desk {
+        strong::after {
+            background: linear-gradient(90deg, rgba(73, 250, 222, 0) 0%, #FFFFFF 50%, rgba(73, 250, 222, 0) 100%);
+        }
+    }
+    .sub-amarelo-desk {
+        strong::after {
+            background: linear-gradient(90deg, rgba(73, 250, 222, 0) 0%, #FAEA00 50%, rgba(73, 250, 222, 0) 100%);
+        }
+    }
+    .sub-laranja-desk {
+        strong::after {
+            background: linear-gradient(90deg, rgba(73, 250, 222, 0) 0%, #F96500 50%, rgba(73, 250, 222, 0) 100%);
+        }
+    }
+    .sub-azul-claro-desk {
+        strong::after {
+            background: linear-gradient(90deg, rgba(73, 250, 222, 0) 0%, #21D6CD 50%, rgba(73, 250, 222, 0) 100%);
+        }
+    }
+    .sub-azul-medio-desk {
+        strong::after {
+            background: linear-gradient(90deg, rgba(73, 250, 222, 0) 0%, #00BAFF 50%, rgba(73, 250, 222, 0) 100%);
+        }
+    }
+    .sub-azul-desk {
+        strong::after {
+            background: linear-gradient(90deg, rgba(73, 250, 222, 0) 0%, #4600E0 50%, rgba(73, 250, 222, 0) 100%);
+        }
+    }
+    .sub-roxo-desk {
+        strong::after {
+            background: linear-gradient(90deg, rgba(73, 250, 222, 0) 0%, #AF3CFF 50%, rgba(73, 250, 222, 0) 100%);
+        }
+    }
+    .sub-rosa-desk {
+        strong::after {
+            background: linear-gradient(90deg, rgba(73, 250, 222, 0) 0%, #FF4F94 50%, rgba(73, 250, 222, 0) 100%);
+        }
+    }
+    .sub-verde-desk {
+        strong::after {
+            background: linear-gradient(90deg, rgba(73, 250, 222, 0) 0%, #9DF400 50%, rgba(73, 250, 222, 0) 100%);
+        }
+    }
+    .sub-rosa-claro-desk {
+        strong::after {
+            background: linear-gradient(90deg, rgba(73, 250, 222, 0) 0%, #EB8181 50%, rgba(73, 250, 222, 0) 100%);
+        }
+    }
+
+        
+    }
+}

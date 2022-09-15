@@ -1,0 +1,95 @@
+.acordeon__mae
+    background: linear-gradient(333.35deg, #ABABCF -2.66%, #E3E4F0 34.58%), #FFFFFF
+    width: 100%
+    height: 55rem
+    display: flex
+    .acordeon__esquerda
+        z-index: 0
+        width: 60%
+        height: 100%
+        // padding-left: 13.9rem
+        // padding-right: 10rem
+        padding-top: 4rem
+        float: left
+        border-radius: 0 50px 50px 0
+        background-color: white
+        .box-titulo
+            margin: 0 auto
+            width: 53%
+            p
+                color: $cor-texto
+                font-family: $Urbanist
+                font-size: 3rem
+                line-height: 3.75rem
+            strong
+                display: flex
+                flex-direction: column
+                width: fit-content
+            strong::after 
+                content: ""
+                background: linear-gradient(90deg, rgba(73, 250, 222, 0) 0%, #FAEA00 50%, rgba(73, 250, 222, 0) 100%)
+                width: auto
+                height: 8px               
+            .destaque__acordeon
+                margin: 0 auto
+                width: 53%
+                height: 8px
+                margin-right: 11rem
+        .box-titulo__transferencias
+            strong::after       
+                background: linear-gradient(90deg, rgba(73, 250, 222, 0) 0%, rgb(175, 60, 255) 50%, rgba(73, 250, 222, 0) 100%)   
+        .box-titulo__recargas
+            strong::after       
+                background: linear-gradient(90deg, rgba(73, 250, 222, 0) 0%, rgb(0, 186, 255) 50%, rgba(73, 250, 222, 0) 100%)
+        .box-titulo__pagametodecontas
+            strong::after       
+                background: linear-gradient(90deg, rgba(73, 250, 222, 0) 0%, #FAEA00 50%, rgba(73, 250, 222, 0) 100%)
+        .box-titulo__openbanking
+            strong::after       
+                background: linear-gradient(90deg, rgba(73, 250, 222, 0) 0%, #EF6100 50%, rgba(73, 250, 222, 0) 100%)
+        .box-titulo__cobranca
+            strong::after       
+                background: linear-gradient(90deg, rgba(73, 250, 222, 0) 0%, rgb(157, 244, 0) 50%, rgba(73, 250, 222, 0) 100%)
+        .box-titulo__auto
+            strong::after       
+                background: linear-gradient(90deg, rgba(73, 250, 222, 0) 0%, rgb(33, 214, 205) 50%, rgba(73, 250, 222, 0) 100%)
+        .box-titulo__creditplataform
+            strong::after       
+                background: linear-gradient(90deg, rgba(250, 35, 120, 0) 0% #FF8A8A 50%, rgba(255, 138, 138, 0) 100%)
+        .box-titulo__corbanasaservice
+            strong::after       
+                background: linear-gradient(90deg, rgba(73, 250, 222, 0) 0%, #FA2378 50%, rgba(250, 35, 120, 0) 00%)
+                
+
+        .acordeon__conteudo
+            margin: 0 auto
+            width: 53%
+            padding-top: 4.25rem
+            .accordion-item
+                background-color: #F7F5FF
+                .accordion-button
+                    background-color: #F7F5FF
+                    font-size: 1.5rem
+                    line-height: 1.625rem
+                    color: $cor-texto
+                    font-weight: 700
+                    text-transform: uppercase
+                .accordion-button::after
+                    border-radius: 1rem
+                    color: white
+                .accordion-body
+                    p
+                        font-family: $Inter
+                        font-weight: 400
+                        font-size: 1.125rem
+                        line-height: 1.688rem
+                        color: $cor-texto
+                        opacity: .7
+    .acordeon__direita
+        height: auto
+        // right: -2rem
+        padding-top: 6rem
+        // position: absolute
+        img
+            position: absolute
+            left: 51%

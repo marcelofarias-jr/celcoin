@@ -1,0 +1,657 @@
+@import _variables.sass
+@import './others/_teste.sass'
+// ************************SOBRE************************
+.destaque__sobre
+    width: 100%
+    height: auto
+    padding: 73px 0 110px 0
+    .destaque__conteudo
+        padding: 180px 195px 264px 195px
+        height: 594px
+        width: auto
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        text-align: center
+        border-radius: 10px
+        background: linear-gradient(0deg, rgba(39, 23, 108, 0.54), rgba(39, 23, 108, 0.54)), url('../img/02-android-smartphone-mockup 1.png')
+        background-size: cover
+        color: white
+        .interno
+            object-fit: cover
+            display: flex
+            align-items: center
+            justify-content: center
+            flex-direction: column
+            max-width: 849px
+            h1
+                max-width: 849px
+                font-size: 64px
+            p
+                margin-top: 38px
+                font-family: $Inter
+                font-size: 20px
+                line-height: 30px
+                font-weight: 700
+                text-align: center
+            button
+                background-color: $cor-primária
+                width: 70px
+                height: 70px
+                border-radius: 50%
+                display: flex
+                justify-content: center
+                align-items: center
+.conteudo__sobre
+    width: 100%
+    background-image: url('../img/back-sobre.png')
+    background-color: rgba(128, 109, 251, 1)
+    background-size: cover
+    color: white
+    padding-top: 100px
+    h2
+        font-family: $Urbanist
+        font-size: 48px
+        line-height: 60px
+        padding-bottom: .7rem
+        font-weight: 600
+        background: linear-gradient(90deg, rgba(73,250,222,0) 0%, $azul 50%, rgba(73,250,222,0) 100%)
+        background-size: 25% 6px
+        background-position: bottom 0 left 0,bottom 6px left 0
+        background-repeat: no-repeat
+    p
+        font-size: 20px
+        line-height: 30px
+        font-family: $Inter
+        font-style: regular
+        font-weight: 400
+    .companhia-sobre
+        margin-top: 65px
+        .conteudo
+            display: flex
+            flex-flow: row wrap
+            justify-content: space-between
+            .maior
+                margin-top: 31px
+                width: 60%
+                img
+                    width: 100%
+                    height: 324px
+            .menor
+                margin-top: 31px
+                width: 38%
+                img
+                    width: 385px
+                    height: 324px
+            .img-mbl
+                display: none
+                width: auto
+        .conteudo__mobile
+            margin-bottom: 115px
+    .jornada-sobre
+        margin-top: 115px
+        .conteudo
+            margin-top: 51px
+            display: flex
+            flex-wrap: wrap
+            .texto
+                width: 50%
+                height: auto
+                text-align: left
+                padding-right: 124px
+            .botao
+                margin-top: 56px
+                width: 100%
+                button
+                    background-color: $azul
+                    color: $cor-texto
+                    border-radius: 50px
+                    padding: 12px 32px
+                    font-weight: 700
+                    font-family: $Inter
+                    font-size: 20px
+                    line-height: 20px
+                    border: none
+                    img
+                        margin-left: 16.22px
+    .equipe-sobre
+        margin-top: 115px
+        margin-bottom: 115px
+        .titulo
+            .titulo__dsk
+                display: block
+            .titulo__mbl
+                display: none
+                text-align: center
+                background-position: center bottom
+        .conteudo
+            margin-top: 51px
+            display: flex
+            justify-content: center
+            align-items: center
+            flex-wrap: wrap
+            margin-top: 3.5rem
+            width: 100%
+            height: 30.875rem
+            img
+                width: 100%
+                height: auto
+                border-radius: 20px
+                border: 5px solid white
+                box-shadow: 0px 57px 91px -37px rgba(26, 14, 75, 0.3)
+        .conteudo__mobile
+            width: 100%
+            display: flex
+            flex-flow: row wrap
+            justify-content: center
+            align-items: center
+            display: none
+            .aberto
+                width: 100%
+                display: flex
+                flex-flow: row wrap
+                justify-content: space-evenly
+                align-items: center
+                .foto
+                    width: 45%
+                    margin-top: 17px
+                    img
+                        width: 100%
+            .fechado
+                width: 100%
+                display: none
+                flex-flow: row wrap
+                justify-content: space-evenly
+                align-items: center
+                .foto
+                    width: 45%
+                    margin-top: 17px
+                    img
+                        width: 100%
+            button
+                margin-top: 62px
+                background-color: $azul
+                color: $cor-texto
+                border-radius: 50px
+                padding: 12px 32px
+                font-weight: 700
+                font-family: $Inter
+                font-size: 20px
+                line-height: 20px
+                border: none
+                img
+                    margin-left: 1.5rem
+    .numeros-sobre
+        width: 100%
+        margin-top: 115px
+        .titulo__sobre
+            margin-bottom: 46px
+        .conteudo
+            display: flex
+            gap: 34px
+            justify-content: space-around
+            height: auto
+            width: 100%
+            overflow: hidden
+            .card-sobre
+                color: #FFFFFF
+                width: 277px
+                min-width: 221px
+                height: 400px
+                position: relative
+                top: 90px
+                border-radius: 20px 20px 0 0
+                transition: top 300ms ease-in-out
+                padding: 45px 28px
+                border: 1px solid white
+                &:hover
+                    background-color: $cor-texto
+                    top: 30px
+                    h3
+                        color: $azul
+                .titulo-card
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                h3
+                    margin-top: 20px
+                    font: $Inter
+                    font-size: 45px
+                    line-height: 40px
+                    font-weight: 600
+                p
+                    font-size: 16px
+                    margin-bottom: 20px
+        .conteudo__mbl
+            display: none
+            padding: 0
+            .carousel
+                .card-sobre
+                    color: #FFFFFF
+                    width: 277px
+                    min-width: 221px
+                    height: 400px
+                    position: relative
+                    top: 90px
+                    border-radius: 20px 20px 0 0
+                    transition: top 300ms ease-in-out
+                    padding: 45px 28px
+                    border: 1px solid white
+                    &:hover
+                        background-color: $cor-texto
+                        top: 30px
+                        h3
+                            color: $azul
+                    .titulo-card
+                        display: flex
+                        justify-content: space-between
+                        align-items: center
+                    h3
+                        margin-top: 20px
+                        font: $Inter
+                        font-size: 45px
+                        line-height: 40px
+                        font-weight: 600
+                    p
+                        font-size: 16px
+                        margin-bottom: 20px
+                .slick-current
+                    .card-sobre
+                        background-color: $cor-texto
+                        top: 30px
+                        h3
+                            color: $azul
+        .conteudo__min
+            display: none
+            padding: 0
+            .carousel2
+                .card-sobre
+                    color: #FFFFFF
+                    width: 277px
+                    min-width: 221px
+                    height: 400px
+                    position: relative
+                    top: 90px
+                    border-radius: 20px 20px 0 0
+                    transition: top 300ms ease-in-out
+                    padding: 45px 28px
+                    border: 1px solid white
+                    &:hover
+                        background-color: $cor-texto
+                        top: 30px
+                        h3
+                            color: $azul
+                    .titulo-card
+                        display: flex
+                        justify-content: space-between
+                        align-items: center
+                    h3
+                        margin-top: 20px
+                        font: $Inter
+                        font-size: 45px
+                        line-height: 40px
+                        font-weight: 600
+                    p
+                        font-size: 16px
+                        margin-bottom: 20px
+                .slick-current
+                    .card-sobre
+                        background-color: $cor-texto
+                        top: 30px
+                        h3
+                            color: $azul
+.teste__sobre
+    width: 100%
+    padding: 4.6rem 13.9rem
+    background-color: rgba(247, 245, 255, 1)
+    .box-teste
+        width: 100%
+        display: flex
+        align-items: center
+        .teste__esquerda
+            width: 50%
+            span
+                font-family: $Urbanist
+                color: $cor-primária
+                font-size: 1.5rem
+                line-height: 2rem
+                font-weight: 600
+            h3
+                font-family: $Urbanist
+                color: $cor-texto
+                font-size: 2.25rem
+                line-height: 2.925rem
+                font-weight: 600
+        .teste__direita
+            width: 50%
+            padding-left: 300px
+            button
+                background-color: $cor-primária
+                color: white
+                border-radius: 3.125rem
+                padding: .75rem 2rem
+                font-weight: 700
+                font-family: $Inter
+                font-size: 1.25rem
+                line-height: 1.25rem
+                min-width: 245px
+.vendas__sobre
+    display: flex
+    align-items: center
+    margin: 7rem 0
+    padding: $padding-recuado
+    display: flex
+    flex-direction: row
+    align-items: center
+    .vendas__conteudo
+        display: flex
+        box-shadow: 0px 57px 91px -37px #888888 !important
+        border-radius: 20px
+        padding: 6.813rem 6.5rem 6.8rem 5.438rem
+        .vendas__esquerda
+            width: 50%
+            button
+                height: 60px
+                min-width: 321px
+                background-color: $cor-primária
+                color: white
+                border-radius: 3.125rem
+                padding: .75rem 2rem
+                font-weight: 700
+                font-family: $Inter
+                font-size: 1.25rem
+                line-height: 1.25rem
+                margin-top: 2.688rem
+                img
+                    height: 15px
+                    width: auto
+                    margin-left: 16px
+            h3
+                font-family: $Urbanist
+                color: $cor-texto
+                font-size: 3rem
+                line-height: 3.75rem
+                font-weight: 600
+                width: 78%
+        .vendas__direita
+            width: 50%
+            flex-direction: column
+            align-items: flex-start
+            padding: 16px
+            gap: 8px
+            h4
+                font-family: $Urbanist
+                color: $cor-texto
+                font-size: 20px
+                line-height: 24px
+                font-weight: 700
+            p
+                color: $cor-texto
+                fonts-family: $Inter
+            .vendas__direita__sup
+                background-color: #F7F5FF
+                display: flex
+                flex-direction: column
+                margin-bottom: 1.2rem
+                width: 80%
+                padding: 1rem
+                margin-left: 1rem
+                border-radius: 5px
+                .texto
+                    p
+                        width: 71%
+                        font-size: 20px
+                        line-height: 24px
+                        color: #1E1360
+                        font-weight: 400
+                .titulo
+                    width: 100%
+                    display: flex
+                    justify-content: space-between
+                    .titulo__nome
+                        display: flex
+                        img
+                            width: auto
+                            height: 27px
+                            margin-right: .5rem
+
+            .vendas__direita__inf
+                border-radius: 5px
+                background-color: #F7F5FF
+                display: flex
+                flex-direction: column
+                width: 80%
+                padding: 1rem
+                margin-left: 1rem
+                line-height: 27px
+                .texto
+                    p
+                        width: 71%
+                        font-size: 20px
+                        line-height: 24px
+                        color: #1E1360
+                        font-weight: 400
+                .titulo
+                    width: 100%
+                    display: flex
+                    justify-content: space-between
+                    .titulo__nome
+                        display: flex
+                        img
+                            width: auto
+                            height: 27px
+                            margin-right: .5rem
+
+// @media only screen and (max-width: 1360px)
+//     .destaque__sobre
+//         padding: 50px
+//     .conteudo__sobre
+//         padding: 50px 100px 0 100px
+//         p
+//             font-size: 16px
+//         .numeros-sobre
+//             .conteudo
+//                 gap: 0
+//     .vendas__sobre
+//         padding: 4rem
+// @media only screen and (max-width: 1025px)
+//     .destaque__sobre
+//         .destaque__conteudo
+//             .interno
+//                 h1
+//                     font-size: 40px
+//     .conteudo__sobre
+//         padding: 0 125px
+//         p
+//             font-size: 14px
+//         h2
+//             background-size: 30% 6px !important
+//         .numeros-sobre
+//             .conteudo
+//                 display: none
+//             .conteudo__mbl
+//                 display: block
+//         .companhia-sobre
+//             padding: 0
+//             .conteudo
+//                 p
+//                     margin-bottom: 42px
+//                 .maior
+//                     width: 100%
+//                     margin-top: 16px
+//                 .menor
+//                     width: 49%
+//                     margin-top: 16px
+//                 .img-mbl
+//                     display: block
+//                 #img-desk
+//                     display: none
+//         .jornada-sobre
+//             margin-top: 42px
+//             padding: 0
+//             .conteudo
+//                 .texto
+//                     width: 100%
+//                     margin-top: 1rem
+//                     padding-right: 0
+//                 .botao
+//                     display: flex
+//                     justify-content: center
+//         .equipe-sobre
+//             padding: 0
+//             .titulo
+//                 .titulo__dsk
+//                     display: none
+//                 .titulo__mbl
+//                     display: block
+//                     margin-top: 82px
+//             .conteudo
+//                 display: none
+//             .conteudo__mobile
+//                 display: flex
+//                 margin-top: 52px
+// @media only screen and (max-width: 992px)
+//     .destaque__sobre
+//         padding: 0
+//         .destaque__conteudo
+//             border-radius: 0
+//             padding: 0 23px
+//             text-align: center
+//     .conteudo__sobre
+//         padding: 42px 22px 0 22px
+//         background-image: none
+//         h2
+//             background-size: 155px 6px
+//         .companhia-sobre
+//             padding: 0
+//             .conteudo
+//                 p
+//                     margin-bottom: 42px
+//                 .maior
+//                     width: 100%
+//                     margin-top: 16px
+//                 .menor
+//                     width: 49%
+//                     margin-top: 16px
+//                 .img-mbl
+//                     display: block
+//                 #img-desk
+//                     display: none
+//         .jornada-sobre
+//             margin-top: 42px
+//             padding: 0
+//             .conteudo
+//                 .texto
+//                     width: 100%
+//                     margin-top: 1rem
+//                     padding-right: 0
+//                 .botao
+//                     display: flex
+//                     justify-content: center
+//         .equipe-sobre
+//             padding: 0
+//             .titulo
+//                 .titulo__dsk
+//                     display: none
+//                 .titulo__mbl
+//                     display: block
+//                     margin-top: 82px
+//             .conteudo
+//                 display: none
+//             .conteudo__mobile
+//                 display: flex
+//                 margin-top: 52px
+//         .numeros-sobre
+//             margin-top: 4rem
+//             padding: 0
+//             background-image: none
+//             .titulo__sobre
+//                 text-align: center
+//                 h2
+//                     line-height: 3rem
+//                     font-size: 48px
+//                     line-height: 68px
+//                     margin-bottom: 0
+//                     font-weight: 400
+//                     background-size: 50% 6px !important
+//                 .borda
+//                     margin-top: 16px
+//             .numeros__conteudo
+//                 padding: 0
+//                 padding-left: 105vw
+//                 padding: 2.5rem 1.5rem 0 1.5rem
+//                 .numeros__card
+//                     max-width: unset
+//                     padding: 32px 19px
+//                     margin: 0 5px
+//                     .card__data
+//                         img
+//                             width: 44px
+//                             height: 44px
+//                         p
+//                             font-size: 14px
+//                             line-height: 24px
+//                     .card__numeros
+//                         p
+//                             font-size: 40px
+//                             line-height: 40px
+//                     .card__texto
+//                         p
+//                             font-size: 14px
+//                             line-height: 24px
+//     .teste__sobre
+//         padding: $padding-mobile
+//         .box-teste
+//             flex-direction: column
+//             .teste__esquerda
+//                 display: flex
+//                 flex-direction: column
+//                 width: 100%
+//                 text-align: center
+//                 justify-content: center
+//                 padding: 0
+//                 h3
+//                     margin-top: 2rem
+//             .teste__direita
+//                 width: 100%
+//                 display: flex
+//                 flex-direction: row
+//                 justify-content: center
+//                 padding-left: 0
+//                 margin-top: 2rem
+//     .vendas__sobre
+//         padding: 0
+//         .vendas__conteudo
+//             padding: 0
+//             flex-direction: column
+//             .vendas__esquerda
+//                 width: 100%
+//                 display: flex
+//                 flex-direction: column
+//                 align-items: center
+//                 text-align: center
+//                 button
+//                     width: 80%
+//                     margin-bottom: 50px
+//             .vendas__direita
+//                 width: 100%
+//                 display: flex
+//                 flex-direction: column
+//                 align-items: center
+//                 margin-bottom: 75px
+// @media only screen and ( max-width: 768px )
+//     .conteudo__sobre
+//         .numeros-sobre
+//             .titulo__sobre
+//                 h2
+//                     background-position: center bottom
+//             .conteudo__mbl
+//                 display: none
+//             .conteudo__min
+//                 display: block
+//         .companhia-sobre
+//             .conteudo
+//                 .menor
+//                     img
+//                         width: 100%
